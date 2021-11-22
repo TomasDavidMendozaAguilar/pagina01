@@ -1,0 +1,145 @@
+/* bloque de menú flotante */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mosaicos*/
+
+
+div.imagenes{
+	margin:   5px 20px;
+	box-shadow: 4px 4px 4px 4px skyblue;
+    width: 250px;
+    height: 150px;
+
+    
+
+}
+
+
+div.imagenes:hover{
+    transform: rotate(-3deg);
+   
+
+}
+
+div.inf{
+	text-align: center;
+	text-shadow: 5px 1px 3px purple;
+	padding: 1px;
+}
+
+
+/*bloque del nav */
+
+
+
+
+
+
+
+
+*{
+	margin: 0;
+
+	padding: 0;
+}
+
+
+
+.menu{
+	background: #00BFFF;
+}
+
+
+.menu nav img{ /* se modifico */
+	width: 30px;
+	border-radius: 50%;
+
+
+
+}
+
+
+.menu nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  padding: 10px;
+}
+
+
+
+.menu nav ul{
+
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 12px 20px;
+	display: block;
+}
+
+.menu nav ul li ul{
+
+	display: flex;
+	flex-direction: column;
+}
+
+a:hover{
+	background: rgb(44,44,44);
+}
+
+.menu nav ul li ul{
+	position: absolute;
+	background: #008A93;
+}
+
+.menu nav ul li ul li{
+
+	width: 180px;
+    position: relative;
+}
+
+
+.menu nav ul li ul li ul{
+    top: 0;
+    left: 180px;
+	position: absolute;
+}
+
+.menu nav ul li ul{
+	display: none;
+}
+
+.menu nav ul li:hover > ul{
+  display: block;
+}
